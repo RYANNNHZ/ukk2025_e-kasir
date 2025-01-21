@@ -9,11 +9,12 @@
     </li>
 
     <li class="nav-item" role="presentation">
-        <a href="#tab5Id" class="nav-link disabled" data-bs-toggle="tab"><i class="bi bi-box-seam-fill"></i> produk</a>
+        <a href="/kasir" class="nav-link {{ $header == 'kasir' ? 'text-primary' : 'text-dark'}}"><i class="bi bi-laptop-fill"></i> kasir</a>
     </li>
     <li class="nav-item" role="presentation">
-        <a href="#" class="nav-link disabled" data-bs-toggle="tab">Disabled</a>
-    </li>   
+        <a href="/produk" class="nav-link {{ $header == 'produk'? 'text-primary' : 'text-dark' }}"><i class="bi bi-box-seam-fill"></i> produk</a>
+    </li>
+
 </ul>
 
 <!-- Tab panes -->

@@ -3,6 +3,7 @@
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ErrorController;
 use App\Http\Controllers\KasirController;
+use App\Http\Controllers\ProductController;
 use App\Http\Middleware\isLogin;
 use Illuminate\Support\Facades\Route;
 
@@ -22,6 +23,7 @@ Route::get('/', function () {
 });
 
 Route::resource('/kasir',KasirController::class)->middleware('isLogin');
+Route::resource('/produk',ProductController::class)->middleware('isLogin');
 
 
 Route::get('/halamanlogin',[AuthController::class,'halLogin']);

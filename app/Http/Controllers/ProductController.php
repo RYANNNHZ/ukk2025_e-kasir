@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\produk;
 use Illuminate\Http\Request;
 
-class KasirController extends Controller
+class ProductController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,7 +13,7 @@ class KasirController extends Controller
     public function index()
     {
         $produks = produk::all();
-        return view('content.kasir')->with(['header'=>'kasir','produks' => $produks]);
+        return view('content.products')->with(['header' => 'produk','produks' => $produks]);
     }
 
     /**
@@ -21,7 +21,7 @@ class KasirController extends Controller
      */
     public function create()
     {
-
+        //
     }
 
     /**
@@ -29,7 +29,7 @@ class KasirController extends Controller
      */
     public function store(Request $request)
     {
-        
+        //
     }
 
     /**
